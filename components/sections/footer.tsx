@@ -6,12 +6,17 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
+          {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-accent to-secondary rounded flex items-center justify-center text-background font-heading text-lg font-bold">
-                H
+            <div className="flex items-center gap-3 mb-4">
+              <img
+                src="/logo2.png"
+                alt="Akande Olufemi & Co Logo"
+                className="w-12 h-12 object-contain"
+              />
+              <div className="font-heading text-xl font-bold text-foreground">
+                Akande Olufemi & Co
               </div>
-              <div className="font-heading text-lg font-bold text-foreground">Akande Olufemi & Co</div>
             </div>
             <p className="text-foreground/60 text-sm leading-relaxed">
               Premium accounting and financial advisory for discerning clients since 2007.
