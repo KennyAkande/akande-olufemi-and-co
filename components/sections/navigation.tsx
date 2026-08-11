@@ -18,7 +18,7 @@ export default function Navigation() {
             className="w-10 h-10 object-contain"
           />
           <div className="flex flex-col">
-            <div className="font-heading text-sm font-bold text-secondary tracking-wide">AKANDE OLUFEMI</div>
+            <div className="font-heading text-base font-bold text-secondary tracking-wide">AKANDE OLUFEMI</div>
             <div className="font-heading text-xs text-accent font-semibold tracking-widest">& CO</div>
           </div>
         </div>
@@ -27,25 +27,25 @@ export default function Navigation() {
         <div className="hidden md:flex gap-8">
           <button
             onClick={() => scrollToSection('about')}
-            className="text-foreground hover:text-accent transition-colors text-sm font-medium"
+            className="text-foreground hover:text-accent transition-colors text-base font-semibold"
           >
             About
           </button>
           <button
             onClick={() => scrollToSection('team')}
-            className="text-foreground hover:text-accent transition-colors text-sm font-medium"
+            className="text-foreground hover:text-accent transition-colors text-base font-semibold"
           >
             Team
           </button>
           <button
             onClick={() => scrollToSection('services')}
-            className="text-foreground hover:text-accent transition-colors text-sm font-medium"
+            className="text-foreground hover:text-accent transition-colors text-base font-semibold"
           >
             Services
           </button>
           <button
             onClick={() => scrollToSection('contact')}
-            className="text-foreground hover:text-accent transition-colors text-sm font-medium"
+            className="text-foreground hover:text-accent transition-colors text-base font-semibold"
           >
             Contact
           </button>
@@ -54,7 +54,7 @@ export default function Navigation() {
         {/* CTA BUTTON */}
         <button
           onClick={() => scrollToSection('contact')}
-          className="px-6 py-2 bg-accent text-background font-medium rounded hover:bg-accent/90 transition-colors text-sm"
+          className="px-6 py-2.5 bg-accent text-background font-semibold rounded hover:bg-accent/90 transition-colors text-base"
         >
           Get Started
         </button>
