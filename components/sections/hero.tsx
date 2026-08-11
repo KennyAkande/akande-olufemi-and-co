@@ -14,7 +14,7 @@ export default function Hero() {
       />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-background/15" />
+      <div className="absolute inset-0 bg-background/25" />
 
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-6 w-full">
