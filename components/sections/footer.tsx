@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
@@ -28,24 +30,24 @@ export default function Footer() {
             <h4 className="font-heading font-bold text-foreground mb-4 text-sm uppercase tracking-widest">Services</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#services" className="text-foreground/70 hover:text-accent transition-colors text-sm">
+                <Link href="/services/business-accounting" className="text-foreground/70 hover:text-accent transition-colors text-sm">
                   Business Accounting
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-foreground/70 hover:text-accent transition-colors text-sm">
+                <Link href="/services/tax-strategy-compliance" className="text-foreground/70 hover:text-accent transition-colors text-sm">
                   Tax Strategy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-foreground/70 hover:text-accent transition-colors text-sm">
+                <Link href="/services/financial-advisory" className="text-foreground/70 hover:text-accent transition-colors text-sm">
                   Financial Advisory
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="text-foreground/70 hover:text-accent transition-colors text-sm">
+                <Link href="/contact" className="text-foreground/70 hover:text-accent transition-colors text-sm">
                   Consultation
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -55,24 +57,19 @@ export default function Footer() {
             <h4 className="font-heading font-bold text-foreground mb-4 text-sm uppercase tracking-widest">Company</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#about" className="text-foreground/70 hover:text-accent transition-colors text-sm">
+                <Link href="/about" className="text-foreground/70 hover:text-accent transition-colors text-sm">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#team" className="text-foreground/70 hover:text-accent transition-colors text-sm">
+                <Link href="/team" className="text-foreground/70 hover:text-accent transition-colors text-sm">
                   Our Team
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="text-foreground/70 hover:text-accent transition-colors text-sm">
+                <Link href="/contact" className="text-foreground/70 hover:text-accent transition-colors text-sm">
                   Contact
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-foreground/70 hover:text-accent transition-colors text-sm">
-                  Blog
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

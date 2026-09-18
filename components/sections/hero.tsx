@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Hero() {
   return (
@@ -35,12 +36,18 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="px-8 py-3.5 bg-accent text-slate-950 font-heading font-bold rounded hover:bg-accent/90 transition-all hover:shadow-lg text-xl">
+            <Link
+              href="/services"
+              className="px-8 py-3.5 bg-accent text-slate-950 font-heading font-bold rounded hover:bg-accent/90 transition-all hover:shadow-lg text-xl text-center"
+            >
               Discover Our Services
-            </button>
-            <button className="px-8 py-3.5 border-2 border-accent text-accent font-heading font-bold rounded bg-black/40 backdrop-blur-sm hover:bg-accent hover:text-slate-950 transition-all text-xl">
+            </Link>
+            <Link
+              href="/contact"
+              className="px-8 py-3.5 border-2 border-accent text-accent font-heading font-bold rounded bg-black/40 backdrop-blur-sm hover:bg-accent hover:text-slate-950 transition-all text-xl text-center"
+            >
               Schedule Consultation
-            </button>
+            </Link>
           </div>
 
           {/* Stats Row with Enlarged Labels */}

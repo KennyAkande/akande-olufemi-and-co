@@ -1,18 +1,23 @@
-const services = [
+import Link from 'next/link'
+
+export const services = [
   {
     name: 'Business Accounting',
+    slug: 'business-accounting',
     accountCode: '100',
     description: 'Comprehensive bookkeeping, financial reporting, and compliance services tailored to your business size and complexity.',
     features: ['Monthly Reconciliation', 'Financial Statements', 'Payroll Services', 'Business Tax Planning'],
   },
   {
     name: 'Tax Strategy & Compliance',
+    slug: 'tax-strategy-compliance',
     accountCode: '200',
     description: 'Proactive tax planning and preparation for individuals and businesses, minimizing liability while ensuring compliance.',
     features: ['Income Tax Planning', 'Entity Structure Optimization', 'Quarterly Estimates', 'Audit Representation'],
   },
   {
     name: 'Financial Advisory',
+    slug: 'financial-advisory',
     accountCode: '300',
     description: 'Strategic financial guidance for wealth building, investment planning, and long-term financial success.',
     features: ['Retirement Planning', 'Investment Analysis', 'Estate Planning', 'Risk Management'],
@@ -61,9 +66,12 @@ export default function Services() {
                 ))}
               </div>
 
-              <button className="w-full px-4 py-2 border border-accent text-accent font-medium rounded hover:bg-accent/10 transition-colors text-sm">
+              <Link
+                href={`/services/${service.slug}`}
+                className="block w-full text-center px-4 py-2 border border-accent text-accent font-medium rounded hover:bg-accent/10 transition-colors text-sm"
+              >
                 Learn More
-              </button>
+              </Link>
             </div>
           ))}
         </div>

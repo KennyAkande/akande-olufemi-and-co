@@ -66,14 +66,6 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Left Column - Info */}
           <div>
-            <div className="text-accent font-mono text-sm tracking-widest mb-4 inline-block">GET IN TOUCH</div>
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Schedule Your Consultation
-            </h2>
-            <p className="text-foreground/80 text-lg mb-8 leading-relaxed">
-              Ready to optimize your financial strategy? Reach out to our team for a personalized consultation. We'll discuss your goals and show you how we can help.
-            </p>
-
             <div className="space-y-8">
               <div>
                 <div className="font-heading font-bold text-foreground mb-2">Email</div>
